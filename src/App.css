@@ -1,0 +1,122 @@
+.App {
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #121212;
+  color: white;
+  padding: 1rem;
+}
+
+.App-header {
+  width: 100%;
+  max-width: 1200px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* Уменьшаем лого на маленьких экранах */
+.App-logo {
+  height: 30vmin;
+}
+
+/* Для контейнеров (картинки, карточки и т.д.) */
+.card {
+  width: 40%;
+  max-width: 800px;
+  padding: 1rem;
+  background: #1e1e1e;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+/* Картинки адаптивные */
+img {
+  width: 40%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+/* Видео адаптивное */
+video {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 10px;
+}
+
+/* Поле ввода */
+input[type="text"],
+input[type="file"] {
+  width: 100%;
+  max-width: 800px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #444;
+  background: #222;
+  color: white;
+  margin-bottom: 10px;
+}
+
+/* Кнопки */
+button {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+/* Медиа-запросы для телефонов */
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .App-logo {
+    height: 20vmin;
+  }
+
+  .card {
+    width: 95%;
+  }
+
+  input[type="text"],
+  input[type="file"],
+  button {
+    max-width: 40%;
+  }
+  .uploaded-image {
+    width: 40%;
+    max-width: 400px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .uploaded-image {
+      width: 40%;
+      max-width: 300px;
+    }
+  }
+  
+}
